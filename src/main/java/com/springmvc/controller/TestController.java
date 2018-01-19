@@ -26,15 +26,15 @@ public class TestController {
         String person;
         String optValues = request.getParameter("opt_values");
         if ("1".equals(optValues)){
-            person = "姓名：张三，年龄：24，性别：男，出生地：广西南宁";
+            person = "姓名：me，年龄：38，性别：男，出生地：上海";
             mapJson.put("person",person);
         }
         if ("2".equals(optValues)){
-            person = "姓名：李四，年龄：30，性别：男，出生地：广西百色";
+            person = "姓名：her，年龄：33，性别：女，出生地：深圳";
             mapJson.put("person",person);
         }
         if ("3".equals(optValues)){
-            person = "姓名：王五，年龄29，性别：男，出生地：广西桂林";
+            person = "姓名：who，年龄29，性别：男，出生地：广州";
             mapJson.put("person",person);
         }
         return mapJson;
