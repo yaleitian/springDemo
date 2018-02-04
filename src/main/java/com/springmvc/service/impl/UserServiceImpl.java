@@ -18,27 +18,32 @@ public class UserServiceImpl implements UserService {
 	@Resource(name = "UserDao")
 	private UserDao userDao;
 
+	@Override
 	public User findByUsernameAndPwd(String name, String pwd) {
 
 		return userDao.findByUsernameAndPwd(name, pwd);
 	}
 
+	@Override
 	public List<User> find(User user){
 
 		return userDao.find(user);
 	}
 
 
+	@Override
 	public void add(User user) {
 
 		userDao.add(user);
 	}
 	
+	@Override
 	public void update(User user) {
 
 		userDao.update(user);
 	}
 
+	@Override
 	public void delete(String id) {
 
 		userDao.delete(id);
