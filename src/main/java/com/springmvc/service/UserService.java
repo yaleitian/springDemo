@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * Created by yalei.tian on 2018-01-16
  * 用户service接口
+ * @author lees
  */
 public interface UserService {
 
@@ -49,8 +50,10 @@ public interface UserService {
 	 */
 	 void delete(String id);
 
+
     /**
-     * 上传方法接口
+     * 上传方法
+     * @param file
      */
     void beginUpload(MultipartFile file);
 }
