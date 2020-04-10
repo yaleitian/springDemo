@@ -3,6 +3,7 @@ package test;
 /**
  * Created by Vitelon on 2017/3/10.
  */
+
 public class Demo1 {
     public static void main(String[] args) {
         int a = 4;
@@ -20,4 +21,5 @@ public class Demo1 {
         System.out.println("l = "+ l +",d ="+ d); //l=3, d=3
         //++--运算符,在前时，是先增减再赋值；在后时，是先赋值再增减。
     }
+
 }
