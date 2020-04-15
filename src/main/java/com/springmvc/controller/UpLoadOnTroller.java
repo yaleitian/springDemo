@@ -1,5 +1,6 @@
 package com.springmvc.controller;
 
+import com.springmvc.dao.UserDao;
 import com.springmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,8 @@ public class UpLoadOnTroller {
 
     @Autowired
     UserService userService;
+    @Autowired
+    UserDao userDao;
 
     @RequestMapping(value = "/upload",method = RequestMethod.GET)
     public  String showUploadFilePage() {
